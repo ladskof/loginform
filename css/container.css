@@ -1,0 +1,71 @@
+/* LOGIN CARD */
+
+.login-container {
+    width: 610px;
+    max-width: 90%;
+
+    padding: 45px 55px;
+
+    background: rgba(10, 24, 35, 0.75);
+
+    border: 1px solid rgba(0, 255, 145, 0.65);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 0 30px rgba(0, 255, 145, 0.12),
+        inset 0 0 30px rgba(0, 255, 145, 0.03);
+
+    backdrop-filter: blur(15px);
+
+    position: relative;
+    z-index: 2;
+}
+
+/* OPTIONS */
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 18px 0 25px;
+
+    font-size: 13px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #aeb9c0;
+}
+
+.remember input {
+    width: 18px;
+    height: 18px;
+
+    accent-color: #00ff91;
+}
+
+.options a,
+.signup a {
+    color: #00ff91;
+    text-decoration: none;
+}
+
+.options a:hover,
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* SIGN UP */
+
+.signup {
+    text-align: center;
+
+    color: #b2bdc4;
+
+    font-size: 14px;
+}

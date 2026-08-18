@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+/* BACKGROUND */
+
+.background {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at 50% 0%, #123a48 0%, transparent 35%),
+        radial-gradient(circle at 10% 80%, #063d32 0%, transparent 25%),
+        radial-gradient(circle at 90% 80%, #063d32 0%, transparent 25%),
+        linear-gradient(135deg, #030914, #07131d 50%, #02070d);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Green light effects */
+
+.background::before,
+.background::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 80px;
+
+    background: #00ff91;
+    opacity: 0.12;
+    filter: blur(25px);
+
+    transform: rotate(-35deg);
+}
+
+.background::before {
+    left: -180px;
+    top: 55%;
+}
+
+.background::after {
+    right: -180px;
+    top: 35%;
+    transform: rotate(-35deg);
+}
+
+/* USER ICON */
+
+.user-icon {
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    border: 2px solid #00ff91;
+
+    background: #06141d;
+
+    box-shadow:
+        0 0 15px rgba(0, 255, 145, 0.5),
+        inset 0 0 15px rgba(0, 255, 145, 0.1);
+}
+
+.user-icon span {
+    font-size: 45px;
+    color: #00ff91;
+}
+
+/* DIVIDER */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin: 30px 0 20px;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #33434d;
+}
+
+.divider p {
+    color: #76838c;
+    font-size: 13px;
+}
+
+/* SOCIAL */
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-top: 25px;
+}
+
+.social-buttons button {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: 1px solid #00a96d;
+
+    background: #07151e;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.social-buttons button:hover {
+    border-color: #00ff91;
+
+    color: #00ff91;
+
+    box-shadow:
+        0 0 15px rgba(0, 255, 145, 0.35);
+
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 25px;
+
+    color: #87939b;
+
+    font-size: 12px;
+}
+
+footer span {
+    color: #00ff91;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .login-container {
+        padding: 35px 25px;
+    }
+
+}

@@ -1,0 +1,48 @@
+/* TITLE */
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+h1 span {
+    color: #00ff91;
+}
+
+.subtitle {
+    text-align: center;
+    color: #9aa9b5;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+/* LABELS */
+
+form > label {
+    display: block;
+    color: #e8eeee;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .options {
+        font-size: 12px;
+    }
+
+}
